@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ANIMA – Aesthetic Content &amp; Soulful Storytelling</title>
+<meta name="description" content="ANIMA is a studio for aesthetic direction and sensory storytelling for luxury beauty and fragrance brands.">
+<meta name="theme-color" content="#f9f6f1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ANIMA – Aesthetic Content &amp; Soulful Storytelling">
+<meta property="og:description" content="Aesthetic direction and sensory storytelling for luxury beauty and fragrance brands.">
+<meta property="og:url" content="https://animabyayla.com">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f9f6f1'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='%232d2823'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Pinyon+Script&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f9f6f1;--ink:#2d2823;--mute:#857b70;--line:#e4dbcf;--accent:#7f8f77;--g1:#efd9cb;--g2:#e8dfd0;--g3:#dfe4d8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;line-height:1.7;overflow-x:hidden}
+.script{font-family:'Pinyon Script','Cormorant Garamond',cursive;font-weight:400}
+nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(1.3rem + env(safe-area-inset-top,0px)) 6vw 1.3rem;z-index:5;font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;background:linear-gradient(var(--bg) 40%,transparent)}
+nav a{color:var(--ink);text-decoration:none}
+nav .logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;letter-spacing:.4em;font-weight:500}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;padding:7rem 5vw 6rem;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);animation:float 14s ease-in-out infinite;transition:transform .8s ease-out}
+.b1{width:min(60vw,520px);aspect-ratio:1;background:var(--g1);left:6%;top:12%;opacity:.85}
+.b2{width:min(55vw,460px);aspect-ratio:1;background:var(--g3);right:4%;bottom:10%;opacity:.85;animation-delay:-5s}
+.b3{width:min(40vw,320px);aspect-ratio:1;background:var(--g2);left:42%;top:40%;opacity:.95;animation-delay:-9s}
+@keyframes float{0%,100%{scale:.92}50%{scale:1.1}}
+.hero>.in{position:relative}
+.hero h1{font-weight:300;font-size:clamp(4.6rem,24vw,17rem);letter-spacing:.14em;margin-left:.14em;line-height:.95;transition:letter-spacing 1.2s}
+.hero h1:hover{letter-spacing:.2em}
+.hero .sub{font-size:clamp(2.2rem,7vw,5rem);color:var(--ink);line-height:1.1;margin-top:.8rem}
+.ask{margin-top:2.2rem;min-height:2.4em;font-style:italic;font-size:clamp(1.3rem,2.8vw,1.9rem);color:var(--mute);transition:opacity .8s}
+.ask.off{opacity:0}
+.btn{display:inline-block;margin-top:1.8rem;padding:1.05rem 3rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;transition:background .4s,color .4s}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.strip{overflow:hidden;border-block:1px solid var(--line);padding:1.2rem 0;white-space:nowrap}
+.strip div{display:inline-block;animation:slide 42s linear infinite;font-style:italic;font-size:clamp(1.4rem,3vw,2.2rem);color:var(--mute)}
+.strip span{margin:0 2.4rem}.strip i{color:var(--accent);font-style:normal}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:clamp(5rem,14vw,10rem) 8vw;max-width:1200px;margin:auto}
+.label{font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.38em;text-transform:uppercase;color:var(--mute);margin-bottom:2.2rem;display:flex;align-items:center;gap:1rem}
+.label::after{content:"";height:1px;background:var(--line);flex:1;max-width:120px}
+.manifest{font-size:clamp(2rem,5.4vw,4.2rem);font-weight:300;line-height:1.22;max-width:19em}
+.manifest em{color:var(--mute)}
+.sig{display:block;margin-top:1rem;font-size:3.2rem;color:var(--accent)}
+.list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:4.5rem 1fr 1.1fr;gap:.6rem 2rem;align-items:baseline;padding:2.6rem 0;border-bottom:1px solid var(--line);transition:padding .5s}
+.row:hover{padding-left:1rem}
+.row .n{font-size:3rem;color:var(--accent);line-height:1}
+.row h3{font-weight:400;font-size:clamp(1.9rem,3.8vw,2.8rem);line-height:1.12}
+.row p{color:var(--mute);font-size:1.15rem}
+@media (max-width:820px){.row{grid-template-columns:3.5rem 1fr}.row p{grid-column:2}}
+.worlds{display:flex;flex-wrap:wrap;gap:.2rem 1.8rem;font-style:italic;font-size:clamp(1.7rem,4vw,2.8rem);color:var(--mute)}
+.worlds span{transition:color .4s}.worlds span:hover{color:var(--ink)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:2.4rem}
+.steps div{border-top:1px solid var(--line);padding-top:1rem}
+.steps .script{font-size:3.4rem;color:var(--accent);line-height:1}
+.steps h4{font-weight:500;font-size:1.6rem;margin:.2rem 0}
+.steps p{color:var(--mute);font-size:1.12rem}
+.cta{text-align:center}
+.cta h2{font-weight:300;font-size:clamp(2.6rem,8vw,6rem);line-height:1.08}
+.cta .script{display:block;font-size:clamp(2.8rem,7vw,4.8rem);color:var(--accent);margin-top:.4rem}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:2rem 8vw calc(2.6rem + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute)}
+footer a{color:inherit;text-decoration:none}
+.legal{display:none;position:fixed;inset:0;z-index:20;background:var(--bg);overflow:auto;padding:calc(5rem + env(safe-area-inset-top,0px)) 8vw calc(4rem + env(safe-area-inset-bottom,0px))}
+.legal:target{display:block}
+.legal .inner{max-width:680px;margin:auto}
+.legal h2{font-weight:300;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin-bottom:2.4rem}
+.legal h3{font-family:'Jost',sans-serif;font-weight:400;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);margin:2.2rem 0 .6rem}
+.legal p{font-size:1.2rem}
+.legal a{color:var(--ink)}
+.legal .close{position:fixed;top:calc(1.3rem + env(safe-area-inset-top,0px));right:6vw;font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--ink);text-decoration:none;background:var(--bg);padding:.4rem 0 .4rem .8rem}
+nav .links{display:flex;gap:2.4rem}
+nav .links a{position:relative}
+nav .links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+nav .links a:hover::after{transform:scaleX(1)}
+@media (max-width:820px){nav .links .opt{display:none}}
+.label .no{color:var(--accent);letter-spacing:.2em}
+.row .del{grid-column:3;font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-top:-.2rem}
+@media (max-width:820px){.row .del{grid-column:2}}
+.cta .meta{margin-top:2.2rem;font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);line-height:2}
+.about{display:grid;grid-template-columns:1fr 1.1fr;gap:2rem 5rem;align-items:start}
+.about .lead{font-size:clamp(1.9rem,4vw,3rem);font-weight:300;line-height:1.25}
+.about .text p{color:var(--mute);font-size:1.22rem;margin-bottom:1.3rem}
+.about .text p:first-child{color:var(--ink)}
+.about .sig{margin-top:.6rem}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity 1.2s,transform 1.2s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.blob,.strip div{animation:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><a href="#top" class="logo">ANIMA</a><div class="links"><a class="opt" href="#services">Services</a><a class="opt" href="#approach">Approach</a><a class="opt" href="#about">About</a><a href="#contact">Get in touch</a></div></nav>
+
+<header class="hero" id="top">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="in">
+    <h1>ANIMA</h1>
+    <div class="sub script">Aesthetic Content &amp; Soulful Storytelling</div>
+    <p class="ask" id="ask">What does a memory look like?</p>
+    <a href="#contact" class="btn">Let’s talk</a>
+  </div>
+</header>
+
+<div class="strip"><div id="strip"></div></div>
+
+<section id="philosophy">
+  <div class="label rv"><span class="no">01</span>Philosophy</div>
+  <p class="manifest rv">Luxury is not a product. It is a feeling that stays with you. <em>We give it a face, a light, a voice.</em></p>
+  <span class="sig script rv">anima</span>
+</section>
+
+<section id="services">
+  <div class="label rv"><span class="no">02</span>Services</div>
+  <div class="list rv">
+    <div class="row"><span class="n script">i</span><h3>Aesthetic Direction &amp; Curation</h3><p>A distinct visual identity for your brand, from mood and palette to art direction and the careful curation of every image.</p><span class="del">Moodboards · Visual guidelines · Image curation</span></div>
+    <div class="row"><span class="n script">ii</span><h3>Sensory Storytelling</h3><p>Narratives that translate scent, texture and emotion into imagery and words, so your audience feels the product before they touch it.</p><span class="del">Brand narrative · Product stories · Campaign copy</span></div>
+    <div class="row"><span class="n script">iii</span><h3>Launch &amp; Campaign Concepts</h3><p>Concepts for launches and campaigns, from the central idea to the visual world and the content that carries it.</p><span class="del">Launch concept · Visual world · Content plan</span></div>
+  </div>
+</section>
+
+<section id="worlds">
+  <div class="label rv"><span class="no">03</span>Worlds we work in</div>
+  <div class="worlds rv"><span>Fragrance</span><span>·</span><span>Skincare</span><span>·</span><span>Haute Parfumerie</span><span>·</span><span>Cosmetics</span><span>·</span><span>Ritual</span><span>·</span><span>Home Scent</span></div>
+</section>
+
+<section id="approach">
+  <div class="label rv"><span class="no">04</span>Approach</div>
+  <div class="steps rv">
+    <div><span class="script">1</span><h4>Listen</h4><p>We start with a conversation about what your brand truly is.</p></div>
+    <div><span class="script">2</span><h4>Feel</h4><p>Mood, memory and material shape the concept.</p></div>
+    <div><span class="script">3</span><h4>Create</h4><p>Refined work, delivered with care and precision.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="label rv"><span class="no">05</span>The Founder</div>
+  <div class="about">
+    <p class="lead rv">Behind ANIMA is Ayla.</p>
+    <div class="text rv">
+      <p>Fragrance, skin and the quiet psychology of beauty have shaped the way I see the world for as long as I can remember.</p>
+      <p>I am drawn to what lies beneath the surface: why a scent can bring back an entire summer, why a texture can feel like comfort, why some stories stay with us long after we have heard them.</p>
+      <p>Books, languages and acting have taught me that every brand, like every person, has a voice of its own. It only needs to be listened to.</p>
+      <p>ANIMA is where these passions meet: a place where beauty and fragrance houses find a visual and narrative soul that feels truly their own.</p>
+      <span class="sig script">Ayla</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="label rv" style="justify-content:center">Contact</div>
+  <h2 class="rv">What will your story feel like?</h2>
+  <span class="script rv">Let’s find out.</span>
+  <a href="mailto:hello@animabyayla.com?subject=Project%20inquiry%20%E2%80%93%20ANIMA" class="btn rv">Let’s talk</a>
+  <p class="meta rv">Based in Germany · Working with brands worldwide<br>Every inquiry receives a personal reply</p>
+</section>
+
+<footer><span>© 2026 ANIMA</span><a href="mailto:hello@animabyayla.com">hello@animabyayla.com</a><a href="#impressum">Impressum</a></footer>
+
+<section class="legal" id="impressum" aria-label="Impressum">
+  <a href="#top" class="close">Close ✕</a>
+  <div class="inner">
+    <div class="label">Legal Notice</div>
+    <h2>Impressum</h2>
+    <h3>Angaben gemäß § 5 DDG</h3>
+    <p>Ayla Oezdemir<br>c/o Autorenglück #44435<br>Albert-Einstein-Str. 47<br>02977 Hoyerswerda<br>Deutschland</p>
+    <h3>Kontakt</h3>
+    <p>E-Mail: <a href="mailto:hello@animabyayla.com">hello@animabyayla.com</a></p>
+    <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+    <p>Ayla Oezdemir<br>Anschrift wie oben</p>
+  </div>
+</section>
+
+<script>
+const qs=["What does a memory look like?","Can silence have a scent?","What colour is a first impression?","How does a promise feel on skin?","Where does beauty begin?"];
+const strip=document.getElementById('strip');
+const one=qs.map(q=>`<span>${q}</span><span><i>✦</i></span>`).join('');
+strip.innerHTML=one+one;
+const ask=document.getElementById('ask');let k=0;
+setInterval(()=>{ask.classList.add('off');setTimeout(()=>{k=(k+1)%qs.length;ask.textContent=qs[k];ask.classList.remove('off')},800)},4200);
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const bl=[...document.querySelectorAll('.blob')];
+addEventListener('pointermove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;bl.forEach((b,i)=>b.style.transform=`translate(${x*(30+i*25)}px,${y*(30+i*25)}px)`)});
+</script>
+</body>
+</html>
