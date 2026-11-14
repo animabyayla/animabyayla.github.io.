@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://animabyayla.com/sitemap.xml
