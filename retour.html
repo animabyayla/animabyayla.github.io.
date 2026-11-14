@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RETOUR – A concept by ANIMA</title>
+<meta name="description" content="RETOUR is a self-initiated fragrance concept by ANIMA: brand world, naming and storytelling for three scents that bring you home.">
+<meta property="og:title" content="RETOUR – A concept by ANIMA">
+<meta property="og:description" content="Some scents don't arrive. They return. A self-initiated fragrance concept by ANIMA.">
+<meta property="og:image" content="https://animabyayla.com/og.jpg">
+<meta name="theme-color" content="#2a1f1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232a1f1a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' text-anchor='middle' fill='%23e9c9a2'%3Er%3C/text%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Lora';src:url('lora.woff') format('woff');font-weight:400 700;font-style:normal;font-display:swap}
+:root{--ember:#2a1f1a;--ember2:#3a2b23;--cream:#f2e7d9;--milk:#e8d6c0;--caramel:#c4925f;--glow:#e9c9a2;--wood:#7a5c48;--fig:#5b3a3a}
+*{box-sizing:border-box;margin:0}
+em,i{font-style:normal}
+html{scroll-behavior:smooth}
+body{background:var(--ember);color:var(--cream);font-family:'Lora',Georgia,serif;font-size:1.12rem;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.concept{position:relative;z-index:3;display:flex;justify-content:space-between;gap:1rem;padding:calc(1rem + env(safe-area-inset-top,0px)) 6vw 1rem;font-size:.82rem;color:rgba(242,231,217,.6)}
+.concept a{text-decoration:none}
+.concept a:hover{color:var(--cream)}
+
+/* hero */
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;position:relative;padding:3rem 6vw 7rem;overflow:hidden}
+.flame{position:absolute;left:50%;top:46%;width:min(110vw,900px);aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(circle,rgba(233,201,162,.32) 0%,rgba(196,146,95,.14) 30%,rgba(42,31,26,0) 62%);animation:flicker 6s ease-in-out infinite}
+@keyframes flicker{0%,100%{opacity:.85;scale:1}40%{opacity:1;scale:1.04}70%{opacity:.75;scale:.98}}
+.hero .in{position:relative}
+.house{font-size:.72rem;letter-spacing:.5em;text-transform:uppercase;color:var(--glow);margin-left:.5em}
+.word{font-weight:400;font-size:clamp(3.6rem,15vw,10.5rem);line-height:1;letter-spacing:.14em;margin:1.4rem 0 1.6rem .14em;color:var(--cream)}
+.hero .tag{font-size:clamp(1.15rem,2.4vw,1.5rem);color:rgba(242,231,217,.82);max-width:24em;margin:auto}
+.hero .tag em{color:var(--glow)}
+.down{position:absolute;bottom:2.4rem;left:50%;translate:-50% 0;font-size:.8rem;color:rgba(242,231,217,.55);text-decoration:none}
+
+/* idea */
+.idea{background:var(--cream);color:var(--ember);padding:clamp(5rem,13vw,9rem) 8vw;text-align:center}
+.chap{font-size:1rem;color:var(--caramel);display:block;margin-bottom:1.6rem}
+.idea .big{font-size:clamp(1.7rem,4vw,2.9rem);line-height:1.4;max-width:21em;margin:auto}
+.idea .big em{color:var(--wood)}
+.idea .small{max-width:34em;margin:2.4rem auto 0;color:#6e5646}
+.triad{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem 2.4rem;margin-top:3rem;color:var(--wood)}
+
+/* world */
+.world{padding:clamp(5rem,12vw,8rem) 8vw;text-align:center;background:var(--ember2)}
+.drops{display:flex;justify-content:center;flex-wrap:wrap;gap:clamp(1.2rem,4vw,3rem);margin-top:1rem}
+.drop{width:clamp(84px,13vw,132px)}
+.drop i{display:block;aspect-ratio:1;border-radius:50% 50% 50% 50%/58% 58% 42% 42%;box-shadow:inset -6px -10px 18px rgba(0,0,0,.12),0 14px 30px rgba(0,0,0,.25)}
+.drop b{display:block;font-weight:400;margin-top:1rem;font-size:1.05rem}
+.drop span{font-size:.68rem;letter-spacing:.2em;color:rgba(242,231,217,.5)}
+.moods{margin:3.4rem auto 0;max-width:40em;font-size:clamp(1.3rem,2.8vw,1.8rem);color:var(--glow);line-height:1.6}
+
+/* collection */
+.scent{display:grid;grid-template-columns:minmax(200px,.8fr) 1.2fr;align-items:center;gap:2rem clamp(2rem,7vw,7rem);padding:clamp(5rem,12vw,8.5rem) 8vw}
+.scent.flip{grid-template-columns:1.2fr minmax(200px,.8fr)}
+.scent.flip .bottle{order:2}
+.s1{background:linear-gradient(170deg,#3b2a24,#241a16);color:var(--cream)}
+.s2{background:#efe4d6;color:var(--ember)}
+.s3{background:linear-gradient(170deg,#d8b48b,#c99a6b);color:#2a1a14}
+.bottle{display:flex;justify-content:center}
+.bottle svg{width:min(60vw,260px);height:auto}
+.no{font-size:1rem;opacity:.7}
+.scent h2{font-weight:400;font-size:clamp(2.6rem,6.4vw,4.6rem);line-height:1.02;margin:.4rem 0 1rem}
+.notes{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;opacity:.72}
+.line{font-size:clamp(1.35rem,2.8vw,1.85rem);line-height:1.45;margin-top:1.8rem;max-width:18em}
+details{margin-top:2.2rem}
+summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:.9rem;font-size:1.02rem;padding:.7rem 1.6rem;border:1px solid currentColor;border-radius:999px;transition:background .4s,color .4s}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-style:normal;transition:transform .4s}
+details[open] summary::after{transform:rotate(45deg)}
+.s1 summary:hover{background:var(--cream);color:var(--ember)}
+.s2 summary:hover,.s3 summary:hover{background:var(--ember);color:var(--cream)}
+summary .c{display:none}
+details[open] summary .o{display:none}
+details[open] summary .c{display:inline}
+.story{margin-top:2.2rem;max-width:30em;font-size:1.14rem;line-height:1.85;animation:fade .9s ease}
+.story p{margin-bottom:1.4rem}
+.story .end{}
+.s1 .story .end{color:var(--glow)}
+.s2 .story .end{color:var(--wood)}
+.s3 .story .end{color:#5b3a2a}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (max-width:760px){.scent,.scent.flip{grid-template-columns:1fr;text-align:left}.scent.flip .bottle{order:0}.bottle svg{width:min(52vw,190px)}}
+
+/* close */
+.closing{text-align:center;padding:clamp(6rem,14vw,10rem) 8vw;position:relative;overflow:hidden}
+.closing .flame{top:50%;opacity:.7}
+.closing h2{position:relative;font-weight:400;font-size:clamp(2.2rem,6.4vw,4.6rem);line-height:1.2}
+.closing h2 span{color:var(--glow)}
+.credit{border-top:1px solid rgba(242,231,217,.14);padding:3rem 8vw calc(3rem + env(safe-area-inset-bottom,0px));text-align:center;font-size:.95rem;color:rgba(242,231,217,.62)}
+.credit strong{font-weight:500;color:var(--cream)}
+.credit .btn{display:inline-block;margin:1.8rem 0 2.2rem;padding:.9rem 2.2rem;border:1px solid rgba(242,231,217,.5);border-radius:999px;text-decoration:none;color:var(--cream);transition:background .4s,color .4s}
+.credit .btn:hover{background:var(--cream);color:var(--ember)}
+.credit nav{display:flex;justify-content:center;gap:1.6rem;font-size:.82rem}
+.credit nav a{text-decoration:none}
+.rv{opacity:0;transform:translateY(18px);transition:opacity 1.3s,transform 1.3s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.flame{animation:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="concept"><a href="https://animabyayla.com">← ANIMA</a><span>A self-initiated concept</span></div>
+
+<header class="hero">
+  <div class="flame"></div>
+  <div class="in">
+    <p class="house">Maison de Parfum</p>
+    <h1 class="word">RETOUR</h1>
+    <p class="tag">Some scents don’t arrive. <em>They return.</em></p>
+  </div>
+  <a class="down" href="#idea">come closer ↓</a>
+</header>
+
+<section class="idea" id="idea">
+  <span class="chap rv">the idea</span>
+  <p class="big rv">A house of scents built around one quiet feeling: <em>coming home.</em></p>
+  <p class="small rv">To a place, to a person, to yourself. RETOUR is for the moments when the world grows still and something familiar finds you again. Soft notes, intimate words, a world that is slow on purpose.</p>
+  <div class="triad rv"><span>a winter evening</span><span>a beloved’s skin</span><span>a childhood kitchen</span></div>
+</section>
+
+<section class="world">
+  <span class="chap rv">the world</span>
+  <div class="drops rv">
+    <div class="drop"><i style="background:#f2e7d9"></i><b>Linen</b><span>#F2E7D9</span></div>
+    <div class="drop"><i style="background:#e8d6c0"></i><b>Warm Milk</b><span>#E8D6C0</span></div>
+    <div class="drop"><i style="background:#c4925f"></i><b>Caramel</b><span>#C4925F</span></div>
+    <div class="drop"><i style="background:#7a5c48"></i><b>Cashmere Wood</b><span>#7A5C48</span></div>
+    <div class="drop"><i style="background:#5b3a3a"></i><b>Fig Skin</b><span>#5B3A3A</span></div>
+  </div>
+  <p class="moods rv">candlelight on a wall · wool against the cheek · the hush after snow · a cup held with both hands</p>
+</section>
+
+<!-- No. 1 -->
+<section class="scent s1">
+  <div class="bottle rv">
+    <svg viewBox="0 0 220 330" aria-hidden="true">
+      <defs>
+        <linearGradient id="glass1" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".12" stop-color="#fff" stop-opacity=".12"/><stop offset=".5" stop-color="#fff" stop-opacity=".04"/><stop offset=".88" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+        <linearGradient id="liq1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a8692f"/><stop offset="1" stop-color="#5e3416"/></linearGradient>
+        <linearGradient id="liqs1" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset=".25" stop-color="#000" stop-opacity="0"/><stop offset=".8" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+        <linearGradient id="cap1" x1="0" x2="1"><stop offset="0" stop-color="#3d2a20"/><stop offset=".3" stop-color="#6e4f3c"/><stop offset=".55" stop-color="#6e4f3c"/><stop offset="1" stop-color="#3d2a20"/></linearGradient>
+        <linearGradient id="col1" x1="0" x2="1"><stop offset="0" stop-color="#8a6a3e"/><stop offset=".35" stop-color="#d8b77e"/><stop offset=".6" stop-color="#f3dfb8"/><stop offset="1" stop-color="#7a5a32"/></linearGradient>
+        <radialGradient id="sh1"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+      </defs>
+      <ellipse cx="110" cy="318" rx="92" ry="9" fill="url(#sh1)"/>
+      <rect x="74" y="8" width="72" height="74" rx="5" fill="url(#cap1)"/>
+      <rect x="74" y="8" width="72" height="4" rx="2" fill="#fff" fill-opacity=".18"/>
+      <rect x="88" y="82" width="44" height="14" fill="url(#col1)"/>
+      <rect x="28" y="96" width="164" height="220" rx="16" fill="#e9c9a2" fill-opacity=".22"/>
+      <rect x="38" y="128" width="144" height="160" rx="9" fill="url(#liq1)"/>
+      <rect x="38" y="128" width="144" height="160" rx="9" fill="url(#liqs1)"/>
+      <rect x="38" y="128" width="144" height="3" fill="#fff" fill-opacity=".25"/>
+      <rect x="28" y="288" width="164" height="28" rx="10" fill="#e9c9a2" fill-opacity=".35"/>
+      <rect x="28" y="96" width="164" height="220" rx="16" fill="url(#glass1)" stroke="#fff" stroke-opacity=".35"/>
+      <rect x="40" y="104" width="7" height="176" rx="3.5" fill="#fff" fill-opacity=".32"/>
+      <rect x="172" y="110" width="3" height="160" rx="1.5" fill="#fff" fill-opacity=".2"/>
+      <rect x="62" y="160" width="96" height="74" fill="#f2e7d9"/>
+      <rect x="62" y="160" width="96" height="74" fill="none" stroke="#000" stroke-opacity=".08"/>
+      <text x="110" y="191" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="14" letter-spacing="3.5" fill="#2a1f1a">RETOUR</text>
+      <line x1="96" y1="200" x2="124" y2="200" stroke="#7a5c48" stroke-opacity=".5" stroke-width=".6"/>
+      <text x="110" y="214" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="6.6" letter-spacing="1.4" fill="#7a5c48">VELVET DUSK</text>
+      <text x="110" y="226" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="5.5" fill="#7a5c48" fill-opacity=".8">eau de parfum · 100 ml</text>
+    </svg>
+  </div>
+  <div>
+    <span class="no rv">nº 1</span>
+    <h2 class="rv">Velvet Dusk</h2>
+    <p class="notes rv">Vanilla · Cashmere wood · A breath of smoke</p>
+    <p class="line rv">The hour when the world grows soft.</p>
+    <details class="rv">
+      <summary><span class="o">Read the story</span><span class="c">Close the story</span></summary>
+      <div class="story">
+        <p>The day has finally let go of you.<br>Outside, the light turns blue and quiet,<br>and somewhere a fire has just been lit.</p>
+        <p>You pull the blanket closer.<br>It still holds the warmth of your skin,<br>the softness of wool,<br>the faint smoke of a candle you blew out too late.</p>
+        <p>Nothing is asked of you now.<br>No one is waiting.<br>Only this:<br>the slow sweetness of vanilla,<br>the calm of wood that has known many winters,<br>and the feeling of being exactly where you belong.</p>
+        <p class="end">Velvet Dusk is the hour when the world grows soft,<br>and you return to yourself.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- No. 2 -->
+<section class="scent s2 flip">
+  <div class="bottle rv">
+    <svg viewBox="0 0 220 330" aria-hidden="true">
+      <defs>
+        <linearGradient id="glass2" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".12" stop-color="#fff" stop-opacity=".12"/><stop offset=".5" stop-color="#fff" stop-opacity=".04"/><stop offset=".88" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+        <linearGradient id="liq2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6ecdf"/><stop offset="1" stop-color="#e2cfb8"/></linearGradient>
+        <linearGradient id="liqs2" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset=".25" stop-color="#000" stop-opacity="0"/><stop offset=".8" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+        <linearGradient id="cap2" x1="0" x2="1"><stop offset="0" stop-color="#cdb9a1"/><stop offset=".3" stop-color="#f1e6d8"/><stop offset=".55" stop-color="#f1e6d8"/><stop offset="1" stop-color="#cdb9a1"/></linearGradient>
+        <linearGradient id="col2" x1="0" x2="1"><stop offset="0" stop-color="#8a6a3e"/><stop offset=".35" stop-color="#d8b77e"/><stop offset=".6" stop-color="#f3dfb8"/><stop offset="1" stop-color="#7a5a32"/></linearGradient>
+        <radialGradient id="sh2"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+      </defs>
+      <ellipse cx="110" cy="318" rx="92" ry="9" fill="url(#sh2)"/>
+      <rect x="74" y="8" width="72" height="74" rx="5" fill="url(#cap2)"/>
+      <rect x="74" y="8" width="72" height="4" rx="2" fill="#fff" fill-opacity=".18"/>
+      <rect x="88" y="82" width="44" height="14" fill="url(#col2)"/>
+      <rect x="28" y="96" width="164" height="220" rx="16" fill="#ffffff" fill-opacity=".22"/>
+      <rect x="38" y="128" width="144" height="160" rx="9" fill="url(#liq2)"/>
+      <rect x="38" y="128" width="144" height="160" rx="9" fill="url(#liqs2)"/>
+      <rect x="38" y="128" width="144" height="3" fill="#fff" fill-opacity=".25"/>
+      <rect x="28" y="288" width="164" height="28" rx="10" fill="#ffffff" fill-opacity=".35"/>
+      <rect x="28" y="96" width="164" height="220" rx="16" fill="url(#glass2)" stroke="#fff" stroke-opacity=".35"/>
+      <rect x="40" y="104" width="7" height="176" rx="3.5" fill="#fff" fill-opacity=".32"/>
+      <rect x="172" y="110" width="3" height="160" rx="1.5" fill="#fff" fill-opacity=".2"/>
+      <rect x="62" y="160" width="96" height="74" fill="#7a5c48"/>
+      <rect x="62" y="160" width="96" height="74" fill="none" stroke="#000" stroke-opacity=".08"/>
+      <text x="110" y="191" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="14" letter-spacing="3.5" fill="#f2e7d9">RETOUR</text>
+      <line x1="96" y1="200" x2="124" y2="200" stroke="#ead8c2" stroke-opacity=".5" stroke-width=".6"/>
+      <text x="110" y="214" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="6" letter-spacing="1" fill="#ead8c2">SKIN OF SUNDAY</text>
+      <text x="110" y="226" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="5.5" fill="#ead8c2" fill-opacity=".8">eau de parfum · 100 ml</text>
+    </svg>
+  </div>
+  <div>
+    <span class="no rv">nº 2</span>
+    <h2 class="rv">Skin of Sunday</h2>
+    <p class="notes rv">White musk · Sandalwood · Rice cream</p>
+    <p class="line rv">The scent of someone you love, before the day begins.</p>
+    <details class="rv">
+      <summary><span class="o">Read the story</span><span class="c">Close the story</span></summary>
+      <div class="story">
+        <p>No alarm today.<br>The light comes in slowly, as if it knows not to hurry.</p>
+        <p>You turn and find the warmth they left behind,<br>a trace on the pillow,<br>clean and soft and close,<br>like the inside of a sweater<br>worn by someone who loves you.</p>
+        <p>There is nothing to do,<br>nowhere to be.<br>Only the hush of sandalwood,<br>the milky softness of rice,<br>and skin that smells like safety.</p>
+        <p class="end">Skin of Sunday is the closeness you return to,<br>again and again.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- No. 3 -->
+<section class="scent s3">
+  <div class="bottle rv">
+    <svg viewBox="0 0 220 330" aria-hidden="true">
+      <defs>
+        <linearGradient id="glass3" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".12" stop-color="#fff" stop-opacity=".12"/><stop offset=".5" stop-color="#fff" stop-opacity=".04"/><stop offset=".88" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+        <linearGradient id="liq3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c98a4f"/><stop offset="1" stop-color="#8a4f2a"/></linearGradient>
+        <linearGradient id="liqs3" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset=".25" stop-color="#000" stop-opacity="0"/><stop offset=".8" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+        <linearGradient id="cap3" x1="0" x2="1"><stop offset="0" stop-color="#2e1c1c"/><stop offset=".3" stop-color="#5b3a3a"/><stop offset=".55" stop-color="#5b3a3a"/><stop offset="1" stop-color="#2e1c1c"/></linearGradient>
+        <linearGradient id="col3" x1="0" x2="1"><stop offset="0" stop-color="#8a6a3e"/><stop offset=".35" stop-color="#d8b77e"/><stop offset=".6" stop-color="#f3dfb8"/><stop offset="1" stop-color="#7a5a32"/></linearGradient>
+        <radialGradient id="sh3"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+      </defs>
+      <ellipse cx="110" cy="318" rx="92" ry="9" fill="url(#sh3)"/>
+      <rect x="74" y="8" width="72" height="74" rx="5" fill="url(#cap3)"/>
+      <rect x="74" y="8" width="72" height="4" rx="2" fill="#fff" fill-opacity=".18"/>
+      <rect x="88" y="82" width="44" height="14" fill="url(#col3)"/>
+      <rect x="28" y="96" width="164" height="220" rx="16" fill="#fff4e6" fill-opacity=".22"/>
+      <rect x="38" y="128" width="144" height="160" rx="9" fill="url(#liq3)"/>
+      <rect x="38" y="128" width="144" height="160" rx="9" fill="url(#liqs3)"/>
+      <rect x="38" y="128" width="144" height="3" fill="#fff" fill-opacity=".25"/>
+      <rect x="28" y="288" width="164" height="28" rx="10" fill="#fff4e6" fill-opacity=".35"/>
+      <rect x="28" y="96" width="164" height="220" rx="16" fill="url(#glass3)" stroke="#fff" stroke-opacity=".35"/>
+      <rect x="40" y="104" width="7" height="176" rx="3.5" fill="#fff" fill-opacity=".32"/>
+      <rect x="172" y="110" width="3" height="160" rx="1.5" fill="#fff" fill-opacity=".2"/>
+      <rect x="62" y="160" width="96" height="74" fill="#f2e7d9"/>
+      <rect x="62" y="160" width="96" height="74" fill="none" stroke="#000" stroke-opacity=".08"/>
+      <text x="110" y="191" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="14" letter-spacing="3.5" fill="#5b3a3a">RETOUR</text>
+      <line x1="96" y1="200" x2="124" y2="200" stroke="#7a5c48" stroke-opacity=".5" stroke-width=".6"/>
+      <text x="110" y="214" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="5.1" letter-spacing="0.6" fill="#7a5c48">BEFORE WE GREW UP</text>
+      <text x="110" y="226" text-anchor="middle" font-family="Lora,Georgia,serif" font-size="5.5" fill="#7a5c48" fill-opacity=".8">eau de parfum · 100 ml</text>
+    </svg>
+  </div>
+  <div>
+    <span class="no rv">nº 3</span>
+    <h2 class="rv">Before We Grew Up</h2>
+    <p class="notes rv">Tonka bean · Cinnamon · Warm milk · Fig</p>
+    <p class="line rv">For the time when everything was simple.</p>
+    <details class="rv">
+      <summary><span class="o">Read the story</span><span class="c">Close the story</span></summary>
+      <div class="story">
+        <p>Do you remember?<br>The kitchen in the afternoon,<br>sunlight falling across the table,<br>a cup of warm milk with too much cinnamon.</p>
+        <p>Outside, the fig tree heavy with fruit,<br>your hands sticky, your knees grass-stained,<br>no idea yet of what the world would ask of you.</p>
+        <p>Someone was always there.<br>Someone always called you in.</p>
+        <p>Tonka, sweet and round like a lullaby.<br>Fig, green and golden like summer.</p>
+        <p class="end">Before We Grew Up is not a memory.<br>It is a way back.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="flame"></div>
+  <h2 class="rv">Some scents don’t arrive.<br><span>They return.</span></h2>
+</section>
+
+<footer class="credit">
+  <p>RETOUR is a fictional fragrance house, created as a <strong>self-initiated concept by ANIMA</strong>.<br>Concept, naming, brand world and storytelling by Ayla.</p>
+  <a class="btn" href="mailto:hello@animabyayla.com?subject=Project%20inquiry%20%E2%80%93%20ANIMA">Create your world with ANIMA</a>
+  <nav><a href="https://animabyayla.com">animabyayla.com</a><a href="https://animabyayla.com/#impressum">Imprint</a><a href="https://animabyayla.com/#datenschutz">Privacy</a></nav>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
