@@ -33,6 +33,48 @@ a{color:inherit}
 .hero .tag em{color:var(--glow)}
 .down{position:absolute;bottom:2.4rem;left:50%;translate:-50% 0;font-size:.8rem;color:rgba(242,231,217,.55);text-decoration:none}
 
+
+/* hero photo */
+.hero{place-items:center start;text-align:left;padding:3rem 6vw 7rem 8vw}
+.hero .in{max-width:52%}
+.hero .flame{left:28%}
+.word{font-size:clamp(3.2rem,7.4vw,7rem)!important;margin-left:0!important}
+.hero .tag{margin:0}
+.house{margin-left:.2em}
+.down{left:8vw;translate:none}
+.heroimg{position:absolute;right:0;top:0;bottom:0;width:48%;overflow:hidden}
+.heroimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity 1.8s ease}
+.heroimg img.on{opacity:1;animation:kb 6.5s ease-out both}
+@keyframes kb{from{transform:scale(1.14)}to{transform:scale(1)}}
+.cap{position:absolute;z-index:2;right:2.4rem;bottom:2.2rem;display:flex;align-items:center;gap:1rem;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--cream)}
+.cap span{color:var(--glow);letter-spacing:.1em;text-transform:none}
+.cap b{font-weight:400;transition:opacity .6s}
+.cap.sw b,.cap.sw span{opacity:0}
+.cap span{transition:opacity .6s}
+.dots{display:flex;gap:.4rem;margin-left:.4rem}
+.dots u{width:18px;height:2px;background:rgba(242,231,217,.3);transition:background .6s}
+.dots u.on{background:var(--glow)}
+.heroimg::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#2a1f1a 0%,rgba(42,31,26,.5) 22%,rgba(42,31,26,0) 55%),linear-gradient(0deg,#2a1f1a 0%,rgba(42,31,26,0) 24%)}
+@keyframes heroIn{from{opacity:0;transform:scale(1.12)}to{opacity:1;transform:none}}
+@media (max-width:820px){
+.hero{display:block;min-height:0;padding:0 0 4.5rem;text-align:center}
+.heroimg{position:relative;width:100%;height:66vh}
+.heroimg::after{background:linear-gradient(0deg,#2a1f1a 3%,rgba(42,31,26,.75) 14%,rgba(42,31,26,0) 40%)}
+.cap{right:auto;left:50%;translate:-50% 0;bottom:1.1rem;white-space:nowrap;font-size:.68rem}
+.hero .in{max-width:none;position:relative;margin-top:0;padding:1.8rem 6vw 0}
+.hero .flame{display:none}
+.hero .tag{margin:auto}
+.down{display:none}
+.word{font-size:16vw!important}
+}
+/* pop-in for product photos */
+.bottle.rv{opacity:0;transform:scale(.86) translateY(34px);transition:opacity .9s,transform 1.15s cubic-bezier(.2,1.45,.35,1)}
+.bottle.rv.in{opacity:1;transform:none}
+.bottle img{animation:floaty 7s ease-in-out infinite}
+.s2 .bottle img{animation-duration:8s;animation-delay:-2s}
+.s3 .bottle img{animation-duration:7.5s;animation-delay:-4s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-16px) rotate(.5deg)}}
+@media (prefers-reduced-motion:reduce){.heroimg img.on{animation:none}.bottle img{animation:none}.bottle.rv{opacity:1;transform:none}}
 /* idea */
 .idea{background:var(--cream);color:var(--ember);padding:clamp(5rem,13vw,9rem) 8vw;text-align:center}
 .chap{font-size:1rem;color:var(--caramel);display:block;margin-bottom:1.6rem}
@@ -102,6 +144,12 @@ details[open] summary .c{display:inline}
 <div class="concept"><a href="https://animabyayla.com">← ANIMA</a><span>A self-initiated concept</span></div>
 
 <header class="hero">
+  <div class="heroimg">
+    <img class="on" src="retour-velvet-dusk.jpg" alt="RETOUR Velvet Dusk perfume bottle in candlelight" data-cap="Velvet Dusk">
+    <img src="retour-skin-of-sunday.jpg" alt="RETOUR Skin of Sunday perfume bottle on white linen" data-cap="Skin of Sunday">
+    <img src="retour-before-we-grew-up.jpg" alt="RETOUR Before We Grew Up perfume bottle with figs" data-cap="Before We Grew Up">
+    <div class="cap"><span id="capno">nº 1</span><b id="capname">Velvet Dusk</b><i class="dots"><u class="on"></u><u></u><u></u></i></div>
+  </div>
   <div class="flame"></div>
   <div class="in">
     <p class="house">Maison de Parfum</p>
@@ -211,6 +259,8 @@ details[open] summary .c{display:inline}
 <script>
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const hs=[...document.querySelectorAll('.heroimg img')],cap=document.querySelector('.cap'),cn=document.getElementById('capname'),cno=document.getElementById('capno'),ds=[...document.querySelectorAll('.dots u')];let hi=0;
+if(hs.length>1&&!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(()=>{hs[hi].classList.remove('on');ds[hi].classList.remove('on');hi=(hi+1)%hs.length;hs[hi].classList.add('on');ds[hi].classList.add('on');cap.classList.add('sw');setTimeout(()=>{cn.textContent=hs[hi].dataset.cap;cno.textContent='nº '+(hi+1);cap.classList.remove('sw')},600)},4800);
 </script>
 </body>
 </html>

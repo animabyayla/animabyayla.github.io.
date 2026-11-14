@@ -36,9 +36,13 @@ a{color:inherit}
 .hero{grid-template-columns:1.05fr 1fr;gap:2rem}
 .visual{position:relative}
 .visual svg{width:100%;height:auto;display:block}
-.visual .h1,.visual .h2,.visual .h3{opacity:0;animation:rise 1.4s cubic-bezier(.2,.7,.2,1) forwards}
-.visual .h1{animation-delay:.3s}.visual .h2{animation-delay:.6s}.visual .h3{animation-delay:.9s}
-@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.visual .h1,.visual .h2,.visual .h3{opacity:0}
+.visual .h1{animation:rise 1.4s cubic-bezier(.2,.7,.2,1) .3s forwards,floaty 7s ease-in-out 1.8s infinite}
+.visual .h2{animation:rise 1.4s cubic-bezier(.2,.7,.2,1) .6s forwards,floaty2 6s ease-in-out 2.1s infinite}
+.visual .h3{animation:rise 1.4s cubic-bezier(.2,.7,.2,1) .9s forwards,floaty 5.5s ease-in-out 2.4s infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@keyframes floaty2{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(14px) rotate(-1.2deg)}}
+@keyframes rise{0%{opacity:0;transform:scale(.78) translateY(34px)}60%{opacity:1;transform:scale(1.045)}100%{opacity:1;transform:none}}
 .visual .h1,.visual .h2,.visual .h3{transform-box:fill-box}
 @media (max-width:900px){.hero{grid-template-columns:1fr}.visual{max-width:460px;margin:0 auto}}
 .stage{background:linear-gradient(180deg,#efe9df 0%,#e9e2d6 68%,#ddd4c5 68.2%,#e6dfd2 100%)!important}
@@ -58,6 +62,13 @@ a{color:inherit}
 .prod{grid-template-columns:380px 1fr}
 @media (max-width:900px){.visual{margin:0 auto}}
 @media (max-width:760px){.prod{grid-template-columns:1fr}.stage{max-width:none!important}}
+.stage.rv{opacity:0;transform:scale(.86) translateY(34px);transition:opacity .9s,transform 1.15s cubic-bezier(.2,1.45,.35,1)}
+.stage.rv.in{opacity:1;transform:none}
+.stage img{animation:breathe 9s ease-in-out infinite alternate}
+.p2 .stage img{animation-delay:-3s}.p3 .stage img{animation-delay:-6s}
+@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.12)}}
+.stage.in{animation:floaty 8s ease-in-out 1.4s infinite}
+@media (prefers-reduced-motion:reduce){.stage.rv{opacity:1;transform:none}.stage img,.stage.in{animation:none}}
 /* idea */
 .idea{padding:clamp(5rem,12vw,8rem) 8vw;border-top:1px solid var(--line)}
 .idea .grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem 6rem}
