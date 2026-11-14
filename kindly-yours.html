@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KINDLY YOURS – A concept by ANIMA</title>
+<meta name="description" content="KINDLY YOURS is a self-initiated skincare concept by ANIMA: brand world, naming and storytelling for skincare built on self-trust.">
+<meta property="og:title" content="KINDLY YOURS – A concept by ANIMA">
+<meta property="og:description" content="Skincare that writes back. A self-initiated skincare concept by ANIMA.">
+<meta property="og:image" content="https://animabyayla.com/kindly-dear-morning.jpg">
+<meta name="theme-color" content="#f7f5f0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f7f5f0'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23a9b5a0'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Inter';src:url('inter-extralight.woff') format('woff');font-weight:200;font-display:swap}
+@font-face{font-family:'Inter';src:url('inter-light.woff') format('woff');font-weight:300;font-display:swap}
+@font-face{font-family:'Inter';src:url('inter-regular.woff') format('woff');font-weight:400;font-display:swap}
+:root{--paper:#f7f5f0;--oat:#ece5d8;--sage:#a9b5a0;--sage-d:#6f7d68;--stone:#8c8f86;--ink:#33362f;--line:#e2ded4}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-weight:300;font-size:1.02rem;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.concept{display:flex;justify-content:space-between;gap:1rem;padding:calc(1.1rem + env(safe-area-inset-top,0px)) 6vw 1.1rem;font-size:.78rem;color:var(--stone)}
+.concept a{text-decoration:none}.concept a:hover{color:var(--ink)}
+
+/* hero */
+.hero{min-height:90vh;display:grid;align-items:center;padding:2rem 8vw 6rem;position:relative;overflow:hidden}
+.sun{position:absolute;right:-12vw;top:8%;width:min(70vw,720px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 40%,#dfe5d8 0%,#ebece3 45%,rgba(247,245,240,0) 70%);animation:drift 16s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(-3vw,2vh)}}
+.hero .in{position:relative;max-width:1100px}
+.pill{display:inline-block;font-size:.74rem;padding:.35rem 1rem;border:1px solid var(--line);border-radius:999px;color:var(--sage-d);background:rgba(255,255,255,.5)}
+.hero h1{font-weight:200;font-size:clamp(3.6rem,13vw,10.5rem);line-height:.95;letter-spacing:-.045em;margin:1.6rem 0 1.8rem}
+.hero h1 span{color:var(--sage)}
+.hero .sub{font-size:clamp(1.15rem,2.2vw,1.45rem);max-width:26em;color:#55594f}
+.hero .sub b{font-weight:400;color:var(--ink)}
+
+.hero{grid-template-columns:1.05fr 1fr;gap:2rem}
+.visual{position:relative}
+.visual svg{width:100%;height:auto;display:block}
+.visual .h1,.visual .h2,.visual .h3{opacity:0;animation:rise 1.4s cubic-bezier(.2,.7,.2,1) forwards}
+.visual .h1{animation-delay:.3s}.visual .h2{animation-delay:.6s}.visual .h3{animation-delay:.9s}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.visual .h1,.visual .h2,.visual .h3{transform-box:fill-box}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.visual{max-width:460px;margin:0 auto}}
+.stage{background:linear-gradient(180deg,#efe9df 0%,#e9e2d6 68%,#ddd4c5 68.2%,#e6dfd2 100%)!important}
+.p2 .stage{background:linear-gradient(180deg,#e2e8dc 0%,#dbe2d4 68%,#cdd6c5 68.2%,#d8dfd0 100%)!important}
+.p3 .stage{background:linear-gradient(180deg,#f0ece5 0%,#e9e4da 68%,#ddd6c9 68.2%,#e5dfd4 100%)!important}
+.stage svg{width:48%!important}.stage svg.wide{width:72%!important}
+@media (max-width:760px){.stage svg{width:34%!important}.stage svg.wide{width:56%!important}}
+@media (prefers-reduced-motion:reduce){.visual .h1,.visual .h2,.visual .h3{animation:none;opacity:1}}
+.visual{aspect-ratio:1/1.08;max-width:560px;margin-left:auto;width:100%}
+.visual img{position:absolute;object-fit:cover;display:block;box-shadow:0 30px 60px -30px rgba(51,54,47,.45)}
+.visual .h1{right:0;top:0;width:70%;height:82%;border-radius:999px 999px 20px 20px}
+.visual .h2{left:0;bottom:8%;width:42%;aspect-ratio:1;border-radius:20px;border:7px solid var(--paper)}
+.visual .h3{right:5%;bottom:0;width:34%;aspect-ratio:1;border-radius:50%;border:7px solid var(--paper)}
+.stage{aspect-ratio:1/1!important;background:var(--oat)!important}
+.stage::before{display:none}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.prod{grid-template-columns:380px 1fr}
+@media (max-width:900px){.visual{margin:0 auto}}
+@media (max-width:760px){.prod{grid-template-columns:1fr}.stage{max-width:none!important}}
+/* idea */
+.idea{padding:clamp(5rem,12vw,8rem) 8vw;border-top:1px solid var(--line)}
+.idea .grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem 6rem}
+.tag{font-size:.78rem;color:var(--sage-d);display:block;margin-bottom:1.4rem}
+.vs{font-weight:200;font-size:clamp(1.9rem,4.2vw,3.1rem);line-height:1.2;letter-spacing:-.02em}
+.vs s{color:var(--stone);text-decoration-thickness:1px}
+.idea p{color:#55594f;margin-bottom:1.1rem}
+.idea p strong{font-weight:400;color:var(--ink)}
+@media (max-width:820px){.idea .grid{grid-template-columns:1fr}}
+
+/* world */
+.world{padding:clamp(4.5rem,11vw,7rem) 8vw;background:#fff}
+.world .wrap{max-width:1100px;margin:auto}
+.chips{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.chip{padding:5.5rem 1.2rem 1.2rem;font-size:.82rem}
+.chip b{display:block;font-weight:400}
+.chip span{opacity:.7;font-size:.72rem}
+@media (max-width:700px){.chips{grid-template-columns:1fr 1fr}.chip{padding-top:3.6rem}.chip:last-child{grid-column:span 2}}
+.promise{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2.4rem}
+.promise span{font-size:.85rem;padding:.5rem 1.1rem;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+
+/* products */
+.products{padding:clamp(5rem,12vw,8rem) 8vw}
+.products .wrap{max-width:1100px;margin:auto}
+.products h2{font-weight:200;font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.03em;line-height:1.1;margin-bottom:3.4rem}
+.prod{display:grid;grid-template-columns:300px 1fr;gap:2rem clamp(2rem,6vw,5rem);align-items:start;padding:3.4rem 0;border-top:1px solid var(--line)}
+.stage{background:var(--oat);border-radius:22px;aspect-ratio:4/5;display:grid;place-items:center;position:relative;overflow:hidden}
+.stage::before{content:"";position:absolute;inset:auto -20% -30% -20%;height:55%;background:radial-gradient(ellipse at center,rgba(255,255,255,.7),transparent 70%)}
+.stage svg{position:relative;width:62%;height:auto}
+.p2 .stage{background:#dfe5d8}.p3 .stage{background:#ebe7df}
+.prod .no{font-size:.78rem;color:var(--sage-d)}
+.prod h3{font-weight:200;font-size:clamp(2.2rem,4.6vw,3.3rem);letter-spacing:-.03em;line-height:1.05;margin:.5rem 0 .6rem}
+.prod .type{font-size:.82rem;color:var(--stone)}
+.prod .ing{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.prod .ing span{font-size:.78rem;padding:.3rem .9rem;border-radius:999px;border:1px solid var(--line);background:#fff}
+.prod .line{font-size:clamp(1.2rem,2.3vw,1.5rem);font-weight:300;margin-top:1.6rem;max-width:22em;line-height:1.5}
+.inside{margin-top:1.8rem;background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.6rem 1.6rem 1.4rem}
+.ih{display:block;font-size:.78rem;color:var(--sage-d);margin-bottom:1.1rem}
+.igs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.ig{border-top:1px solid var(--line);padding-top:.9rem}
+.ig b{display:block;font-weight:400;font-size:1rem}
+.ig em{display:block;font-style:normal;font-size:.76rem;color:var(--sage-d);margin:.1rem 0 .5rem}
+.ig p{font-size:.86rem;line-height:1.6;color:#55594f}
+.ritual{margin-top:1.3rem;padding-top:1rem;border-top:1px dashed var(--line);font-size:.86rem;color:#55594f}
+.ritual span{display:inline-block;margin-right:.6rem;font-size:.72rem;padding:.15rem .7rem;border-radius:999px;background:#dfe5d8;color:var(--sage-d)}
+@media (max-width:900px){.igs{grid-template-columns:1fr}}
+details{margin-top:1.8rem}
+summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:.7rem;font-size:.88rem;font-weight:400;padding:.75rem 1.4rem;border-radius:999px;background:var(--ink);color:var(--paper);transition:background .4s}
+summary:hover{background:var(--sage-d)}
+summary::-webkit-details-marker{display:none}
+summary svg{width:16px;height:16px}
+summary .c{display:none}
+details[open] summary .o{display:none}
+details[open] summary .c{display:inline}
+.letter{margin-top:1.8rem;max-width:30rem;background:#fff;border:1px solid var(--line);border-radius:4px;padding:2.4rem 2.2rem 2rem;box-shadow:0 18px 40px -22px rgba(51,54,47,.35);transform:rotate(-.6deg);animation:unfold .8s ease;position:relative}
+.letter::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--sage);border-radius:4px 4px 0 0}
+.letter p{margin-bottom:1rem;font-size:1.02rem;line-height:1.8}
+.letter .dear{color:var(--sage-d)}
+.letter .sign{margin-top:1.6rem;font-weight:200;font-size:1.5rem;letter-spacing:-.02em}
+@keyframes unfold{from{opacity:0;transform:rotate(-.6deg) translateY(12px)}to{opacity:1;transform:rotate(-.6deg)}}
+@media (max-width:760px){.prod{grid-template-columns:1fr}.stage{aspect-ratio:5/4;max-width:420px}.stage svg{width:42%}}
+
+/* closing */
+.closing{padding:clamp(6rem,14vw,10rem) 8vw;background:var(--ink);color:var(--paper);text-align:center}
+.closing h2{font-weight:200;font-size:clamp(2.2rem,6vw,4.6rem);letter-spacing:-.035em;line-height:1.12;max-width:14em;margin:auto}
+.closing h2 span{color:var(--sage)}
+.closing .sign{margin-top:2.4rem;color:rgba(247,245,240,.7)}
+.credit{padding:3rem 8vw calc(3rem + env(safe-area-inset-bottom,0px));text-align:center;font-size:.86rem;color:var(--stone)}
+.credit strong{font-weight:400;color:var(--ink)}
+.credit .btn{display:inline-block;margin:1.6rem 0 2rem;padding:.85rem 1.8rem;border-radius:999px;border:1px solid var(--ink);text-decoration:none;color:var(--ink);transition:background .4s,color .4s}
+.credit .btn:hover{background:var(--ink);color:var(--paper)}
+.credit nav{display:flex;justify-content:center;gap:1.6rem;font-size:.8rem}
+.credit nav a{text-decoration:none}
+.rv{opacity:0;transform:translateY(18px);transition:opacity 1.1s,transform 1.1s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.sun{animation:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="concept"><a href="https://animabyayla.com">← ANIMA</a><span>A self-initiated concept</span></div>
+
+<header class="hero">
+  
+  <div class="in">
+    <span class="pill">Gentle skincare</span>
+    <h1>Kindly<br>yours<span>.</span></h1>
+    <p class="sub">Skincare that writes back. <b>For the skin you have, not the skin you are told to want.</b></p>
+  </div>
+  <div class="visual" aria-hidden="true"><img class="h1" src="kindly-dear-morning.jpg" alt=""><img class="h2" src="kindly-you-can-rest-now.jpg" alt=""><img class="h3" src="kindly-nothing-to-fix.jpg" alt=""></div>
+</header>
+
+<section class="idea">
+  <div class="grid">
+    <div class="rv">
+      <span class="tag">The idea</span>
+      <p class="vs">Most skincare tells you what is <s>wrong</s>.<br>Ours tells you what is right.</p>
+    </div>
+    <div class="rv">
+      <p><strong>Anti-aging. Flawless. Correct, conceal, perfect.</strong> The language of beauty often begins with a quiet message: you are not enough yet.</p>
+      <p>KINDLY YOURS begins somewhere else. With trust. With the calm that comes when you stop fighting your own reflection.</p>
+      <p>Every product is a short letter from us to you. Gentle, well-chosen ingredients, explained honestly, and a ritual that feels less like repair and more like coming back to yourself.</p>
+    </div>
+  </div>
+</section>
+
+<section class="world">
+  <div class="wrap">
+    <span class="tag rv">The world</span>
+    <div class="chips rv">
+      <div class="chip" style="background:#f7f5f0"><b>Porcelain</b><span>#F7F5F0</span></div>
+      <div class="chip" style="background:#ece5d8"><b>Oat</b><span>#ECE5D8</span></div>
+      <div class="chip" style="background:#a9b5a0"><b>Sage</b><span>#A9B5A0</span></div>
+      <div class="chip" style="background:#8c8f86;color:#f7f5f0"><b>Stone</b><span>#8C8F86</span></div>
+      <div class="chip" style="background:#33362f;color:#f7f5f0"><b>Ink</b><span>#33362F</span></div>
+    </div>
+    <div class="promise rv"><span>No “anti”</span><span>No “flawless”</span><span>No “fix”</span><span>Only care</span></div>
+  </div>
+</section>
+
+<section class="products">
+  <div class="wrap">
+    <h2 class="rv">Three letters,<br>one ritual.</h2>
+
+    <article class="prod p1">
+      <div class="stage rv"><img src="kindly-dear-morning.jpg" alt="Kindly yours. Dear Morning cleansing milk in a frosted glass bottle with oat and chamomile" loading="lazy"></div>
+      <div>
+        <span class="no rv">Letter 01 · Cleansing milk</span>
+        <h3 class="rv">Dear Morning</h3>
+        <p class="line rv">The first kind moment of the day.</p>
+        <div class="inside rv"><span class="ih">What’s inside, and what it does for you</span><div class="igs"><div class="ig"><b>Oat</b><em>The calming one</em><p>Rich in natural soothing compounds, it comforts skin that feels tight or sensitive after the night.</p></div><div class="ig"><b>Chamomile</b><em>The gentle one</em><p>Its bisabolol helps quiet redness, so cleansing never feels like a fight.</p></div><div class="ig"><b>Rice water</b><em>The softening one</em><p>A traditional ingredient that leaves skin smooth and supple, never stripped.</p></div></div><p class="ritual"><span>Your ritual</span>Morning and evening. Massage onto dry skin, add a little warm water, rinse slowly.</p></div>
+        <details class="rv">
+          <summary><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="3.5" width="13" height="9" rx="1"/><path d="M2 4l6 5 6-5"/></svg><span class="o">Read the letter</span><span class="c">Close the letter</span></summary>
+          <div class="letter">
+            <p class="dear">Dear you,</p>
+            <p>before the day asks anything of you, this moment is yours.</p>
+            <p>Warm water. Soft hands. The quiet smell of oat and chamomile, like a kitchen where someone has already made tea.</p>
+            <p>You don’t have to be ready yet. You don’t have to be anything yet.</p>
+            <p>Just begin gently.</p>
+            <p class="sign">Kindly yours.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="prod p2">
+      <div class="stage rv"><img src="kindly-you-can-rest-now.jpg" alt="Kindly yours. You Can Rest Now calming serum in a sage glass dropper bottle with centella leaves" loading="lazy"></div>
+      <div>
+        <span class="no rv">Letter 02 · Calming serum</span>
+        <h3 class="rv">You Can Rest Now</h3>
+        <p class="line rv">For skin, and minds, that have carried too much.</p>
+        <div class="inside rv"><span class="ih">What’s inside, and what it does for you</span><div class="igs"><div class="ig"><b>Centella asiatica</b><em>The healer</em><p>Known for calming irritated skin and supporting it while it recovers.</p></div><div class="ig"><b>Niacinamide</b><em>The strengthener</em><p>Helps reinforce the skin barrier and, with time, evens out tone and texture.</p></div><div class="ig"><b>White tea</b><em>The protector</em><p>Antioxidants that help defend skin against the stress of city air and long days.</p></div></div><p class="ritual"><span>Your ritual</span>Evening. Three drops on clean skin, pressed in with your palms. Breathe while you do it.</p></div>
+        <details class="rv">
+          <summary><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="3.5" width="13" height="9" rx="1"/><path d="M2 4l6 5 6-5"/></svg><span class="o">Read the letter</span><span class="c">Close the letter</span></summary>
+          <div class="letter">
+            <p class="dear">Dear you,</p>
+            <p>you have been holding so much. The deadlines, the noise, the version of you everyone expects.</p>
+            <p>Put it down for a while.</p>
+            <p>Let your skin breathe out, the way you do when you finally close the door behind you. A few drops, a few slow breaths.</p>
+            <p>Nothing is urgent here.</p>
+            <p class="sign">Kindly yours.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="prod p3">
+      <div class="stage rv"><img src="kindly-nothing-to-fix.jpg" alt="Kindly yours. Nothing to Fix barrier cream in a frosted glass jar with shea nuts" loading="lazy"></div>
+      <div>
+        <span class="no rv">Letter 03 · Barrier cream</span>
+        <h3 class="rv">Nothing to Fix</h3>
+        <p class="line rv">No correction. Only care for what is already good.</p>
+        <div class="inside rv"><span class="ih">What’s inside, and what it does for you</span><div class="igs"><div class="ig"><b>Ceramides</b><em>The keeper</em><p>Lipids your skin makes itself. They seal the barrier so moisture stays where it belongs.</p></div><div class="ig"><b>Squalane</b><em>The familiar one</em><p>Mirrors your skin’s own oils, so it nourishes without feeling heavy.</p></div><div class="ig"><b>Shea butter</b><em>The comforter</em><p>Rich fatty acids that soften dry patches and leave skin feeling held.</p></div></div><p class="ritual"><span>Your ritual</span>As the last step, morning and evening. Warm a small amount between your fingertips first.</p></div>
+        <details class="rv">
+          <summary><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="3.5" width="13" height="9" rx="1"/><path d="M2 4l6 5 6-5"/></svg><span class="o">Read the letter</span><span class="c">Close the letter</span></summary>
+          <div class="letter">
+            <p class="dear">Dear you,</p>
+            <p>that line by your eyes is from laughing. That redness is from living.</p>
+            <p>Your skin is not a problem to solve. It is the place where you have been all along, through every season you thought you wouldn’t get through.</p>
+            <p>We won’t promise to change it. Only to keep it soft, and safe, and yours.</p>
+            <p class="sign">Kindly yours.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="closing">
+  <h2 class="rv">You were never something <span>to fix.</span></h2>
+  <p class="sign rv">Kindly yours.</p>
+</section>
+
+<footer class="credit">
+  <p>KINDLY YOURS is a fictional skincare brand, created as a <strong>self-initiated concept by ANIMA</strong>.<br>Concept, naming, brand world and storytelling by Ayla.</p>
+  <a class="btn" href="mailto:hello@animabyayla.com?subject=Project%20inquiry%20%E2%80%93%20ANIMA">Create your world with ANIMA</a>
+  <nav><a href="https://animabyayla.com">animabyayla.com</a><a href="https://animabyayla.com/#impressum">Imprint</a><a href="https://animabyayla.com/#datenschutz">Privacy</a></nav>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-Fonts used on this website: Cormorant Garamond, Jost, Pinyon Script. All licensed under the SIL Open Font License 1.1.
+Fonts used on this website: Cormorant Garamond, Jost, Pinyon Script, Lora, Inter. All licensed under the SIL Open Font License 1.1.
 
 ===== Cormorant_Garamond =====
 Copyright 2015 the Cormorant Project Authors (github.com/CatharsisFonts/Cormorant)
@@ -285,3 +285,12 @@ DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 
+
+
+===== Lora =====
+Copyright 2011 The Lora Project Authors (https://github.com/cyrealtype/Lora-Cyrillic)
+This Font Software is licensed under the SIL Open Font License, Version 1.1 (see license text above).
+
+===== Inter =====
+Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+This Font Software is licensed under the SIL Open Font License, Version 1.1 (see license text above).
